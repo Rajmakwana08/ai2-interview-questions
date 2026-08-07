@@ -8566,6 +8566,12 @@ Artificial Intelligence.
       codeExample: ``
     },
     {
+      id: 1,
+      question: "1. ",
+      answer: "",
+      codeExample: ``
+    },
+    {
       id: 1.1,
       question: "1. Write a program to implement Single Player Game (Using Heuristic Function)",
       answer: "",
