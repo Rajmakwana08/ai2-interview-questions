@@ -9052,9 +9052,9 @@ Basic idea:
 Without Alpha-Beta:
 
               MAX
-            /     \
+            /     \\
           MIN     MIN
-         /  \     /  \
+         /  \\     /  \\
         A    B   C    D
 
 Many branches are evaluated.
@@ -9065,9 +9065,9 @@ Some branches are skipped because they cannot improve the
 final decision.
 
               MAX
-            /     \
+            /     \\
           MIN     MIN
-         /  \       \
+         /  \\       \\
         A    B       X
                   PRUNED
 
