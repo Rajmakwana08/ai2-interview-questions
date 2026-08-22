@@ -8500,10 +8500,776 @@ Artificial Intelligence.
       codeExample: ``
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 11111,
+      question: "Mid paper solution.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+===========================================================
+ADVANCED ARTIFICIAL INTELLIGENCE
+MID-TERM EXAMINATION – SOLVED ANSWERS
+===========================================================
+
+
+Q.1 (a) SHORT QUESTIONS – 1 MARK
+===========================================================
+
+Q1. What is the key idea behind learning in problem-solving?
+
+Answer:
+
+The key idea is that an AI system learns from previous
+problem-solving experiences and uses that knowledge to
+solve similar problems more efficiently in the future.
+
+In short:
+
+Experience → Learning → Better Problem Solving
+
+
+-----------------------------------------------------------
+
+Q2. What is the primary objective of Goal Stack Planning
+   in AI?
+
+Answer:
+
+The main objective of Goal Stack Planning is to achieve the
+final goal by breaking it into smaller sub-goals and solving
+them one by one.
+
+In short:
+
+Main Goal
+   ↓
+Sub-goals
+   ↓
+Actions
+   ↓
+Final Goal
+
+
+-----------------------------------------------------------
+
+Q3. Describe how fuzzy inference works in a fuzzy control
+   system.
+
+Answer:
+
+Fuzzy inference converts input values into fuzzy values,
+applies IF-THEN rules, and produces an output.
+
+Steps:
+
+Input
+  ↓
+Fuzzification
+  ↓
+Apply IF-THEN Rules
+  ↓
+Inference
+  ↓
+Defuzzification
+  ↓
+Output
+
+
+===========================================================
+Q.1 (b) MCQs – 1 MARK
+===========================================================
+
+Q1. Which of the following best defines rote learning?
+
+(A) Learning by repetition
+(B) Learning by reasoning
+(C) Learning through problem-solving
+(D) Learning by making inferences
+
+Answer:
+(A) Learning by repetition
+
+
+-----------------------------------------------------------
+
+Q2. Which of the following is a type of neural network
+   architecture?
+
+(A) Decision Tree
+(B) Feedforward Neural Network
+(C) Support Vector Machine
+(D) K-Nearest Neighbor
+
+Answer:
+(B) Feedforward Neural Network
+
+
+
+===========================================================
+Q.2 – 3 MARK QUESTIONS
+===========================================================
+
+Q1. Discuss the significance of context in pragmatic
+   processing and its effect on interpretation.
+
+Answer:
+
+Pragmatic processing means understanding the intended meaning
+of a sentence using context.
+
+Context is important because the same sentence can have
+different meanings in different situations.
+
+Example:
+
+Sentence:
+"It is cold here."
+
+Possible meaning:
+- Simple statement about temperature.
+- A request to close the window.
+
+Importance of context:
+
+1. Helps understand the speaker's real intention.
+2. Resolves ambiguity in language.
+3. Helps understand indirect requests.
+4. Improves human-computer communication.
+
+Conclusion:
+
+Context helps AI systems understand what the speaker actually
+means rather than only understanding the literal words.
+
+
+-----------------------------------------------------------
+
+Q2. Discuss the limitations of neural networks compared to
+   traditional machine learning algorithms.
+
+Answer:
+
+Neural networks are powerful but have some limitations.
+
+1. Large Data Requirement:
+   Neural networks generally require a large amount of
+   training data.
+
+2. High Computational Cost:
+   Training deep neural networks requires high processing
+   power and memory.
+
+3. Difficult to Explain:
+   Neural networks are often considered "black box" models
+   because their decisions can be difficult to explain.
+
+4. Training Time:
+   Large neural networks may take a long time to train.
+
+5. Overfitting:
+   Neural networks can perform poorly on unseen data if
+   they are not properly trained.
+
+Example:
+
+Decision Tree
+→ Easier to understand
+
+Neural Network
+→ More complex but can learn complicated patterns
+
+
+-----------------------------------------------------------
+
+Q3. Evaluate the ethical implications of Google Duplex
+   interacting with users without clearly indicating it is
+   an AI system. What improvements could be made?
+
+Answer:
+
+Google Duplex is an AI system that can communicate with
+people to perform tasks such as making appointments.
+
+Ethical problems:
+
+1. Lack of Transparency:
+   Users may not know that they are talking to an AI.
+
+2. Deception:
+   People may feel misled if the AI behaves like a human
+   without clearly identifying itself.
+
+3. Privacy:
+   Conversations may involve personal information.
+
+4. Trust:
+   Lack of transparency can reduce trust in AI systems.
+
+Improvements:
+
+- Clearly identify the system as an AI.
+- Inform the user before the conversation starts.
+- Provide options to stop the interaction.
+- Protect personal data.
+- Follow privacy and ethical guidelines.
+
+Conclusion:
+
+AI systems should be transparent, responsible and clearly
+inform users when they are interacting with AI.
+
+
+-----------------------------------------------------------
+
+Q4. How would you modify a planning system to include
+   uncertain information?
+
+Answer:
+
+A planning system can be modified to handle uncertainty by
+using probabilities and possible outcomes.
+
+Methods:
+
+1. Represent uncertain facts using probabilities.
+2. Assign probabilities to possible actions.
+3. Consider multiple possible outcomes.
+4. Select the action with the best expected result.
+5. Update probabilities when new information is received.
+
+Example:
+
+Weather prediction:
+
+Action → Go outside
+
+Possible outcomes:
+- Sunny → 80%
+- Rain → 20%
+
+The planning system considers these probabilities before
+selecting an action.
+
+In short:
+
+Uncertain Information
+        ↓
+Possible Outcomes
+        ↓
+Probability
+        ↓
+Evaluate Actions
+        ↓
+Best Action
+
+
+-----------------------------------------------------------
+
+Q5. Define a Constraint Satisfaction Problem (CSP) in AI.
+
+Answer:
+
+A Constraint Satisfaction Problem (CSP) is a problem in which
+we must assign values to variables while satisfying a set of
+constraints.
+
+A CSP has three main components:
+
+1. Variables
+2. Domains
+3. Constraints
+
+Example: Map Colouring
+
+Variables:
+A, B, C
+
+Domain:
+{Red, Green, Blue}
+
+Constraint:
+Adjacent regions cannot have the same colour.
+
+Example:
+
+A = Red
+B = Green
+C = Blue
+
+Therefore, all constraints are satisfied.
+
+In short:
+
+CSP = Variables + Domains + Constraints
+
+
+-----------------------------------------------------------
+
+Q6. Investigate the challenges of implementing fuzzy logic
+   in real-world systems.
+
+Answer:
+
+Fuzzy logic is useful for handling uncertain or approximate
+information, but its implementation has some challenges.
+
+Main challenges:
+
+1. Rule Design:
+   Creating correct IF-THEN rules can be difficult.
+
+2. Membership Functions:
+   Choosing suitable membership functions requires knowledge
+   of the problem.
+
+3. Large Number of Rules:
+   Complex systems may require many fuzzy rules.
+
+4. Performance:
+   Processing many rules can increase computational cost.
+
+5. Subjectivity:
+   Fuzzy values such as "high", "low" and "medium" may depend
+   on human judgement.
+
+Example:
+
+Temperature = 30°C
+
+It may be considered:
+Warm = 0.7
+Hot  = 0.3
+
+The exact membership values depend on the designed system.
+
+Conclusion:
+
+Fuzzy logic is powerful, but designing rules and membership
+functions correctly is the main challenge.
+
+
+
+===========================================================
+Q.3 – 5 MARK QUESTIONS
+===========================================================
+
+
+Q1. Explain how fuzzification is applied to a real-world
+   scenario, such as controlling room temperature.
+
+Answer:
+
+Fuzzification is the process of converting a crisp input
+value into fuzzy values using membership functions.
+
+Example:
+
+Consider an automatic room temperature control system.
+
+Input:
+Temperature = 30°C
+
+Fuzzy sets:
+
+Temperature
+    |
+    |---- Cold
+    |---- Warm
+    |---- Hot
+
+Suppose at 30°C:
+
+Warm = 0.7
+Hot  = 0.3
+Cold = 0.0
+
+This means the temperature is mostly "Warm" but also partly
+"Hot".
+
+Step 1: Take Input
+
+Temperature = 30°C
+
+        ↓
+
+Step 2: Fuzzification
+
+30°C → Warm = 0.7
+30°C → Hot  = 0.3
+
+        ↓
+
+Step 3: Apply Rules
+
+Rule 1:
+IF temperature is Cold
+THEN heater = High
+
+Rule 2:
+IF temperature is Warm
+THEN heater = Medium
+
+Rule 3:
+IF temperature is Hot
+THEN heater = OFF
+
+        ↓
+
+Step 4: Fuzzy Inference
+
+The system evaluates the rules according to the fuzzy
+membership values.
+
+        ↓
+
+Step 5: Defuzzification
+
+The fuzzy output is converted into a crisp value.
+
+Example:
+
+Heater power = 40%
+
+        ↓
+
+Room temperature is controlled automatically.
+
+
+Diagram:
+
+Temperature Sensor
+       ↓
+   Fuzzification
+       ↓
+   Fuzzy Rules
+       ↓
+ Fuzzy Inference
+       ↓
+ Defuzzification
+       ↓
+ Heater / AC
+       ↓
+Room Temperature
+
+
+Conclusion:
+
+Fuzzification allows a control system to handle values such
+as "cold", "warm" and "hot" instead of using only strict
+YES/NO decisions.
+
+
+-----------------------------------------------------------
+
+Q2. Explain how understanding, as a cognitive task, is
+   modeled in AI systems.
+
+Answer:
+
+Understanding in AI means interpreting information and
+determining its meaning, context and intention.
+
+AI models understanding through several steps.
+
+1. Perception:
+   AI receives input such as text, speech or images.
+
+2. Processing:
+   The system processes the input and identifies important
+   information.
+
+3. Knowledge Representation:
+   Information is stored in a form that the AI can understand.
+
+4. Reasoning:
+   AI uses rules and knowledge to draw conclusions.
+
+5. Context Understanding:
+   AI considers the situation and previous information.
+
+6. Decision/Response:
+   AI produces an appropriate answer or action.
+
+Example:
+
+User:
+"Can you book a table for tonight?"
+
+AI processing:
+
+Speech/Text
+    ↓
+Understand words
+    ↓
+Identify intention = Booking
+    ↓
+Understand context = Tonight
+    ↓
+Find available options
+    ↓
+Give response
+
+
+Diagram:
+
+Input
+  ↓
+Perception
+  ↓
+Language / Pattern Processing
+  ↓
+Knowledge Representation
+  ↓
+Reasoning
+  ↓
+Decision
+  ↓
+Response
+
+
+Conclusion:
+
+AI models cognitive understanding by combining perception,
+knowledge, reasoning and context to produce meaningful
+responses.
+
+
+-----------------------------------------------------------
+
+Q3. Evaluate the effectiveness of Alpha-Beta pruning in
+   reducing computational time in a specific game.
+   Provide metrics to support your argument.
+
+Answer:
+
+Alpha-Beta pruning is an optimization technique used with
+the Minimax algorithm in games such as Chess, Tic-Tac-Toe
+and Checkers.
+
+It removes branches of the game tree that cannot affect the
+final decision.
+
+Basic idea:
+
+Without Alpha-Beta:
+
+              MAX
+            /     \
+          MIN     MIN
+         /  \     /  \
+        A    B   C    D
+
+Many branches are evaluated.
+
+With Alpha-Beta:
+
+Some branches are skipped because they cannot improve the
+final decision.
+
+              MAX
+            /     \
+          MIN     MIN
+         /  \       \
+        A    B       X
+                  PRUNED
+
+
+Important terms:
+
+Alpha (α):
+Best value found so far for MAX.
+
+Beta (β):
+Best value found so far for MIN.
+
+Pruning condition:
+
+        α >= β
+
+When α >= β, remaining branches can be ignored.
+
+Example metrics:
+
+Assume a game tree has:
+
+Branching factor = 4
+Search depth = 6
+
+Without pruning:
+
+Approximate nodes:
+
+4^6 = 4096 nodes
+
+With good move ordering, Alpha-Beta can reduce the number
+of nodes significantly, ideally approaching:
+
+2^(6) = 64 nodes
+
+So:
+
+Without pruning → about 4096 nodes
+With ideal pruning → about 64 nodes
+
+This means much less computation.
+
+Advantages:
+
+1. Reduces number of nodes evaluated.
+2. Reduces computational time.
+3. Allows deeper game searches.
+4. Produces the same optimal Minimax result.
+5. Works especially well with good move ordering.
+
+Conclusion:
+
+Alpha-Beta pruning greatly improves Minimax performance by
+avoiding unnecessary branches while still producing the same
+best move.
+
+
+-----------------------------------------------------------
+
+Q4. Discuss the role of machine learning in enhancing
+   semantic analysis and provide an example.
+
+Answer:
+
+Semantic analysis means understanding the meaning of words,
+sentences and text.
+
+Machine Learning helps AI learn patterns from large amounts
+of text and understand the meaning automatically.
+
+Main roles:
+
+1. Sentiment Analysis:
+   Determines whether text is positive, negative or neutral.
+
+2. Text Classification:
+   Categorizes text into different groups.
+
+3. Word Meaning:
+   Understands the meaning of words based on context.
+
+4. Intent Detection:
+   Identifies what the user wants.
+
+5. Named Entity Recognition:
+   Identifies people, places, organizations, dates, etc.
+
+Example:
+
+Input:
+
+"I really enjoyed this movie."
+
+Machine Learning model:
+
+Text
+ ↓
+Semantic Analysis
+ ↓
+Identify meaning
+ ↓
+Sentiment = Positive
+
+Another example:
+
+User:
+"Where is the nearest hospital?"
+
+AI understands:
+
+Intent = Find location
+Entity = Hospital
+
+
+Diagram:
+
+Text Input
+    ↓
+Machine Learning Model
+    ↓
+Semantic Analysis
+    ↓
+Meaning / Intent / Sentiment
+    ↓
+Output
+
+
+Conclusion:
+
+Machine Learning improves semantic analysis by learning
+language patterns from data and helping AI understand the
+meaning and intention of human language.
+
+
+===========================================================
+QUICK REVISION – REMEMBER THESE
+===========================================================
+
+1. Learning in problem-solving
+   → Experience → Learning → Better solution
+
+2. Goal Stack Planning
+   → Main Goal → Sub-goals → Actions → Goal
+
+3. Fuzzy Inference
+   → Fuzzification → Rules → Inference → Defuzzification
+
+4. Rote Learning
+   → Learning by repetition
+
+5. Feedforward Neural Network
+   → Neural Network Architecture
+
+6. Pragmatic Context
+   → Helps understand actual intention
+
+7. Neural Network Limitation
+   → Data + Time + Computation + Black Box
+
+8. Uncertain Planning
+   → Probability + Possible outcomes + Best action
+
+9. CSP
+   → Variables + Domains + Constraints
+
+10. Fuzzy Logic Challenge
+    → Rule design + Membership functions
+
+11. Fuzzification
+    → Crisp value → Fuzzy value
+
+12. Understanding in AI
+    → Input → Knowledge → Reasoning → Response
+
+13. Alpha-Beta
+    → Removes unnecessary Minimax branches
+
+14. Alpha-Beta condition
+    → α >= β → PRUNE
+
+15. Semantic Analysis
+    → Understand meaning of text
+
+===========================================================
+5-MARK ANSWER FORMULA
+===========================================================
+
+For any 5-mark question, write:
+
+1. Definition
+2. Explanation
+3. 4–6 important points
+4. Example
+5. Simple diagram
+6. Conclusion
+
+This structure makes the answer look complete and is easy
+to remember during the exam.
+===========================================================
+      
+      `
     },
     {
       id: 1,
