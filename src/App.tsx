@@ -9278,46 +9278,2120 @@ to remember during the exam.
       codeExample: ``
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 61,
+      question: "61. What is a Genetic Algorithm? Explain its basic concept and working.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+Genetic Algorithm (GA)
+
+
+1. What is Genetic Algorithm?
+
+A Genetic Algorithm (GA) is an AI search and optimization technique
+inspired by natural evolution.
+
+It tries to find the best solution to a problem by using ideas like
+selection, crossover, and mutation.
+
+Simple meaning:
+
+Genetic Algorithm = Find the best solution by improving a population
+of possible solutions.
+
+
+2. Basic Concept
+
+GA works like natural selection:
+
+Population
+    ↓
+Select best solutions
+    ↓
+Crossover
+    ↓
+Mutation
+    ↓
+New Population
+    ↓
+Repeat
+    ↓
+Best Solution
+
+
+Important terms
+
+Term             Meaning
+------------------------------------------------
+Population       Group of possible solutions
+Chromosome       One possible solution
+Fitness          Measures how good a solution is
+Selection        Select better solutions
+Crossover        Combine two solutions
+Mutation         Make a small random change
+Generation       One complete cycle
+
+
+3. Working of Genetic Algorithm
+
+Step 1: Initial Population
+
+Create some random solutions.
+
+10110
+11001
+10011
+11100
+
+Each is a possible solution.
+
+
+Step 2: Fitness Evaluation
+
+Check how good each solution is.
+
+10110 → Fitness = 3
+11001 → Fitness = 3
+10011 → Fitness = 3
+11100 → Fitness = 3
+
+
+Step 3: Selection
+
+Select the better solutions as parents.
+
+Parent 1 → 10110
+Parent 2 → 11100
+
+
+Step 4: Crossover
+
+Combine parents to create new solutions.
+
+Parent 1 → 101 | 10
+Parent 2 → 111 | 00
+
+Child → 101 | 00
+
+
+Step 5: Mutation
+
+Make a small random change.
+
+Before → 10100
+After  → 10101
+
+
+Step 6: Repeat
+
+Again calculate fitness, select, crossover, and mutate until a good
+solution is found.
+
+
+4. Simple Diagram
+
+Initial Population
+        ↓
+ Fitness Evaluation
+        ↓
+     Selection
+        ↓
+     Crossover
+        ↓
+      Mutation
+        ↓
+ New Population
+        ↓
+   Repeat Process
+        ↓
+  Best Solution
+
+
+5. Advantages
+
+- Finds good solutions for complex problems.
+- Useful when traditional methods are difficult.
+- Can search a large solution space.
+- Does not always require mathematical formulas.
+
+
+6. Applications
+
+- Scheduling
+- Optimization
+- Machine learning
+- Route planning
+- Engineering design
+- Game AI
+
+
+Easy exam definition
+
+Genetic Algorithm is an AI optimization technique inspired by natural
+evolution. It finds good solutions using selection, crossover, and
+mutation.
+
+
+Remember:
+
+GA = Selection + Crossover + Mutation → Better Solution
+      `
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 62,
+      question: "62. Explain the basic terminology used in Genetic Algorithms.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+Basic Terminology of Genetic Algorithm
+
+Genetic Algorithm (GA) uses some terms that are taken from natural
+evolution. Let's understand them in very simple words.
+
+
+1. Population
+
+A population is a group of possible solutions to a problem.
+
+Example:
+
+Population:
+
+10110
+11001
+10011
+11100
+
+Here, all 4 solutions together are called a population.
+
+Population = Group of solutions
+
+
+2. Chromosome
+
+A chromosome represents one complete solution.
+
+Example:
+
+10110
+
+Here, 10110 is one chromosome.
+
+If we have:
+
+10110
+11001
+10011
+
+then there are 3 chromosomes.
+
+Chromosome = One possible solution
+
+
+3. Gene
+
+A gene is a single part/value of a chromosome.
+
+Example:
+
+Chromosome = 10110
+
+             ↓↓↓↓↓
+Genes      = 1 0 1 1 0
+
+Each 1 or 0 is a gene.
+
+Gene = Smallest part of a chromosome
+
+
+4. Fitness Function
+
+A fitness function checks how good a solution is.
+
+Example:
+
+Suppose we want to find a solution containing maximum 1s.
+
+10110 → 3 ones → Fitness = 3
+
+11110 → 4 ones → Fitness = 4
+
+So 11110 is better because it has a higher fitness.
+
+Fitness Function = Measures the quality of a solution
+
+
+5. Selection
+
+Selection means choosing the better chromosomes to become parents
+for the next generation.
+
+Example:
+
+10110 → Fitness 3
+11110 → Fitness 4
+10000 → Fitness 1
+11011 → Fitness 4
+
+Better chromosomes:
+
+11110
+11011
+
+These are selected for reproduction.
+
+Selection = Choose better solutions
+
+
+6. Crossover
+
+Crossover means combining two parent chromosomes to create a
+new chromosome.
+
+Example:
+
+Parent 1 = 101 | 10
+Parent 2 = 110 | 01
+
+After crossover:
+
+Child = 101 | 01
+
+Child = 10101
+
+So information from both parents is combined.
+
+Crossover = Combine two parents to create a child
+
+
+7. Mutation
+
+Mutation means making a small random change in a chromosome.
+
+Example:
+
+Before mutation = 10110
+
+After mutation  = 10010
+                    ↑
+                 Changed
+
+One gene changed from 1 to 0.
+
+Mutation = Small random change
+
+
+Easy Table for Exam
+
+Term                 Simple Meaning
+------------------------------------------------
+Population            Group of solutions
+Chromosome            One complete solution
+Gene                  Part of a chromosome
+Fitness Function      Measures solution quality
+Selection             Chooses better solutions
+Crossover             Combines two parents
+Mutation              Makes a small random change
+
+
+Easy Memory Trick
+
+Population → Many solutions
+Chromosome → One solution
+Gene       → Part of solution
+Fitness    → How good?
+Selection  → Choose best
+Crossover  → Combine
+Mutation   → Change
+
+
+One-line summary:
+
+GA starts with a population → selects good chromosomes → performs
+crossover → applies mutation → produces better solutions.
+      
+      `
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 63,
+      question: "63. Explain the Genetic Algorithm (GA) Cycle with a neat diagram.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+Genetic Algorithm (GA) Cycle
+
+The Genetic Algorithm cycle is the repeated process used by GA to
+find a better or best solution to a problem.
+
+
+GA Cycle
+
+        ┌─────────────────────┐
+        │ Initial Population  │
+        └──────────┬──────────┘
+                   ↓
+        ┌─────────────────────┐
+        │ Fitness Evaluation  │
+        └──────────┬──────────┘
+                   ↓
+        ┌─────────────────────┐
+        │     Selection       │
+        └──────────┬──────────┘
+                   ↓
+        ┌─────────────────────┐
+        │     Crossover       │
+        └──────────┬──────────┘
+                   ↓
+        ┌─────────────────────┐
+        │      Mutation       │
+        └──────────┬──────────┘
+                   ↓
+        ┌─────────────────────┐
+        │ New Population      │
+        └──────────┬──────────┘
+                   │
+                   ↓
+             Good solution?
+              /         \\
+            No           Yes
+            ↓             ↓
+      Repeat Cycle    Best Solution
+
+
+Steps of GA Cycle
+
+
+1. Initial Population
+
+First, GA creates a group of random possible solutions.
+
+Example:
+
+10110
+11001
+10011
+11100
+
+These are the initial chromosomes.
+
+
+2. Fitness Evaluation
+
+The fitness function checks how good each solution is.
+
+10110 → Fitness = 3
+11001 → Fitness = 3
+10011 → Fitness = 3
+11100 → Fitness = 3
+
+
+3. Selection
+
+The better solutions are selected as parents.
+
+Parent 1 → 10110
+Parent 2 → 11100
+
+
+4. Crossover
+
+The selected parents are combined to create new children.
+
+Parent 1 → 101 | 10
+Parent 2 → 111 | 00
+
+Child → 101 | 00
+
+
+5. Mutation
+
+A small random change is made in the child.
+
+Before → 10100
+After  → 10101
+
+
+6. New Population
+
+The new children form the next generation.
+
+The process starts again:
+
+New Population
+      ↓
+Fitness
+      ↓
+Selection
+      ↓
+Crossover
+      ↓
+Mutation
+
+This cycle continues until a good or satisfactory solution is
+obtained.
+
+
+Easy Memory Trick
+
+Population → Fitness → Selection → Crossover → Mutation
+→ New Population → Repeat
+
+
+Exam Definition
+
+The Genetic Algorithm cycle is a repeated process of creating a
+population, evaluating fitness, selecting good solutions, performing
+crossover and mutation, and generating a new population until a
+satisfactory solution is obtained.
+      `
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 64,
+      question: "64. Explain Edge Recombination Schema in Genetic Algorithms.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+Edge Recombination Schema in Genetic Algorithms
+
+
+1. What is Edge Recombination?
+
+Edge Recombination is a crossover technique used in Genetic
+Algorithms, especially for problems where the order of elements is
+important, such as the Travelling Salesman Problem (TSP).
+
+It creates a new child by preserving as many connections (edges)
+between elements as possible from the parent chromosomes.
+
+Simple meaning:
+
+Edge Recombination = Create a child by preserving useful connections
+between elements of the parents.
+
+
+2. Why is it used?
+
+Normal crossover may break the order or connections between cities.
+
+For example:
+
+Parent 1 → A → B → C → D
+Parent 2 → A → C → D → B
+
+Edge recombination tries to keep useful connections such as:
+
+A-B, B-C, C-D
+A-C, C-D, D-B
+
+
+3. Working of Edge Recombination
+
+Suppose we have two parents:
+
+Parent 1: A → B → C → D → E
+
+Parent 2: A → C → E → B → D
+
+
+Step 1: Create an Edge Table
+
+For each city, write its neighboring cities from both parents.
+
+A → B, C
+B → A, C, E
+C → B, D, A, E
+D → C, E, B
+E → D, A, C, B
+
+This is called the edge table.
+
+
+Step 2: Select Starting Element
+
+Start with one element, for example:
+
+A
+
+
+Step 3: Choose Next Element
+
+Look at the neighbors of A:
+
+A → B, C
+
+Choose one of the available connected elements.
+
+For example:
+
+A → B
+
+
+Step 4: Continue
+
+Continue selecting elements while trying to preserve the parent
+connections.
+
+Example child:
+
+A → B → E → C → D
+
+The exact child depends on the edge-selection rules.
+
+
+4. Simple Diagram
+
+Parent 1                  Parent 2
+A → B → C → D → E        A → C → E → B → D
+        \\                     /
+         \\                   /
+          ↓                 ↓
+             Edge Table
+                 ↓
+          Preserve Edges
+                 ↓
+             Child
+       A → B → E → C → D
+
+
+5. Advantages
+
+- Preserves useful connections from parents.
+- Very useful for TSP and routing problems.
+- Helps maintain the order/relationship between elements.
+- Produces valid permutations without duplicate elements when
+  implemented correctly.
+
+
+Easy Memory Trick
+
+Normal Crossover → Focuses on positions.
+Edge Recombination → Focuses on connections.
+
+Parent 1 + Parent 2
+        ↓
+   Edge Table
+        ↓
+ Preserve Edges
+        ↓
+      Child
+
+
+Exam Definition
+
+Edge Recombination is a crossover technique in Genetic Algorithms
+that creates a child chromosome by preserving useful connections or
+edges between elements of two parent chromosomes. It is mainly used
+for permutation-based problems such as the Travelling Salesman
+Problem (TSP).
+      `
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 71,
+      question: "71. What is an Expert System? Explain its characteristics and advantages.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+Expert System
+
+1. What is an Expert System?
+
+An Expert System is an AI-based computer system that uses the
+knowledge and reasoning of a human expert to solve problems and
+make decisions in a specific area.
+
+Simple meaning:
+
+Expert System = Computer program that thinks and gives advice
+like a human expert in a particular field.
+
+Example:
+
+Medical expert system can ask:
+
+Fever? → Yes
+Cough? → Yes
+Cold? → No
+
+Then it uses its stored knowledge to suggest a possible condition.
+
+
+2. Basic Structure
+
+             User
+               ↓
+       ┌──────────────┐
+       │ User Interface│
+       └───────┬──────┘
+               ↓
+       ┌──────────────┐
+       │   Inference  │
+       │    Engine    │
+       └───────┬──────┘
+          ↙           ↘
+         ↓             ↓
+┌────────────────┐ ┌──────────────┐
+│ Knowledge Base │ │ Working      │
+│                │ │ Memory       │
+└────────────────┘ └──────────────┘
+
+Main parts:
+
+- Knowledge Base → Stores expert knowledge and rules.
+- Inference Engine → Uses rules to find a solution.
+- User Interface → Allows user to communicate with the system.
+- Working Memory → Stores current facts and information.
+
+
+3. Characteristics of Expert System
+
+1. Knowledge Based
+
+It contains a large amount of expert knowledge.
+
+2. Reasoning Ability
+
+It uses rules and logic to reach a conclusion.
+
+3. Domain Specific
+
+It is designed for a specific area such as medical diagnosis,
+finance, or agriculture.
+
+4. Consistent Decision Making
+
+It gives decisions based on stored rules and knowledge.
+
+5. Explanation Facility
+
+It can explain how or why it reached a particular conclusion.
+
+6. User Friendly
+
+Users can interact with the system through a user interface.
+
+7. Fast Response
+
+It can provide solutions quickly.
+
+
+4. Advantages of Expert System
+
+1. Available 24/7 — It does not need rest.
+
+2. Fast decision making — Provides answers quickly.
+
+3. Consistent results — Does not get tired or emotional.
+
+4. Stores expert knowledge — Knowledge can be preserved and reused.
+
+5. Reduces cost — Can reduce the need for repeated expert
+   consultation.
+
+6. Useful for training — Can help students or beginners learn
+   from expert knowledge.
+
+7. Works in dangerous areas — Can be used where human experts
+   may be at risk.
+
+
+Easy Example
+
+A medical expert system:
+
+Patient Information
+        ↓
+   Knowledge Base
+        ↓
+ Inference Engine
+        ↓
+ Possible Diagnosis
+        ↓
+    Recommendation
+
+
+Exam Definition — 2 Marks
+
+An Expert System is an AI system that uses stored expert knowledge
+and reasoning techniques to solve problems and make decisions in a
+specific domain.
+
+
+Easy Memory Trick:
+
+Expert System = Knowledge Base + Inference Engine + User Interface
+
+Characteristics:
+Knowledge + Reasoning + Domain-specific + Explanation + Fast response
+
+Advantages:
+Fast + Consistent + 24/7 + Saves expert knowledge + Reduces cost
+      `
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 72,
+      question: "72. Explain the architecture/components of an Expert System.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+Architecture / Components of an Expert System
+
+An Expert System is made up of several components that work
+together to solve a problem like a human expert.
+
+
+1. Architecture Diagram
+
+                    USER
+                      ↓
+             ┌─────────────────┐
+             │ User Interface  │
+             └────────┬────────┘
+                      ↓
+             ┌─────────────────┐
+             │ Inference Engine│
+             └───────┬─┬───────┘
+                     │ │
+          ┌──────────┘ └──────────┐
+          ↓                       ↓
+ ┌─────────────────┐     ┌─────────────────┐
+ │ Knowledge Base  │     │ Working Memory  │
+ └─────────────────┘     └─────────────────┘
+          ↑
+          │
+ ┌─────────────────┐
+ │ Knowledge       │
+ │ Acquisition     │
+ └─────────────────┘
+
+             Explanation Facility
+                    ↓
+             Explains the result
+
+
+2. Main Components
+
+1. Knowledge Base
+
+The Knowledge Base stores the knowledge of the human expert.
+
+It contains:
+
+- Facts
+- Rules
+- Information
+
+Example:
+
+IF temperature is high
+AND patient has cough
+THEN possible infection
+
+Knowledge Base = Stores expert knowledge
+
+
+2. Inference Engine
+
+The Inference Engine is the main reasoning part of the
+expert system.
+
+It applies the rules from the Knowledge Base to the available
+facts and finds a conclusion.
+
+Example:
+
+Fact:
+Temperature = High
+
+Rule:
+IF temperature is high
+THEN patient has fever
+
+Result:
+Patient has fever
+
+Inference Engine = Thinks / reasons using rules
+
+
+3. Working Memory
+
+Working Memory stores the current information or facts
+provided by the user.
+
+Example:
+
+Patient:
+Age = 20
+Temperature = High
+Cough = Yes
+
+Working Memory = Stores current facts
+
+
+4. User Interface
+
+The User Interface allows the user to communicate with the
+expert system.
+
+The user can:
+
+- Enter information
+- Ask questions
+- Receive results
+
+Example:
+
+Enter temperature: 102
+Enter cough: Yes
+
+Result: Possible infection
+
+User Interface = Communication between user and system
+
+
+5. Explanation Facility
+
+The Explanation Facility explains how the system reached
+its conclusion.
+
+For example:
+
+Why is infection suspected?
+
+Because:
+Temperature = High
+Cough = Yes
+
+Explanation Facility = Explains the reasoning
+
+
+6. Knowledge Acquisition
+
+Knowledge Acquisition is the process of collecting knowledge
+from human experts and putting it into the Knowledge Base.
+
+Example:
+
+Human Expert
+      ↓
+Knowledge Collection
+      ↓
+Knowledge Base
+
+Knowledge Acquisition = Collects expert knowledge
+
+
+Easy Table
+
+Component                  Simple Meaning
+------------------------------------------------------------
+Knowledge Base             Stores expert knowledge
+Inference Engine           Performs reasoning
+Working Memory             Stores current facts
+User Interface             Communicates with user
+Explanation Facility       Explains the result
+Knowledge Acquisition      Collects expert knowledge
+
+
+Easy Memory Trick
+
+KB → IE → WM → UI → Explanation → Knowledge Acquisition
+
+Or simply remember:
+
+Knowledge Base stores,
+Inference Engine thinks,
+Working Memory remembers,
+User Interface communicates,
+Explanation explains.
+
+
+Exam Definition
+
+The architecture of an Expert System consists of components such
+as Knowledge Base, Inference Engine, Working Memory, User Interface,
+Explanation Facility, and Knowledge Acquisition. These components
+work together to solve problems using expert knowledge.
+      `
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 73,
+      question: "73. What is Knowledge Engineering? Explain the role of a Knowledge Engineer.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+Knowledge Engineering
+
+1. What is Knowledge Engineering?
+
+Knowledge Engineering is the process of collecting, organizing,
+representing, and using expert knowledge in an AI system or
+Expert System.
+
+Simple meaning:
+
+Knowledge Engineering = Taking knowledge from experts and
+putting it into an AI system.
+
+Example:
+
+Human Expert
+     ↓
+Collect Knowledge
+     ↓
+Convert into Rules/Facts
+     ↓
+Knowledge Base
+     ↓
+Expert System
+
+
+2. What is a Knowledge Engineer?
+
+A Knowledge Engineer is a person who collects knowledge from
+human experts and converts it into a form that an AI or
+Expert System can understand and use.
+
+Simple example:
+
+Suppose we are creating a medical Expert System.
+
+Doctor
+  ↓
+Gives medical knowledge
+  ↓
+Knowledge Engineer
+  ↓
+Creates rules
+  ↓
+Knowledge Base
+
+Example rule:
+
+IF patient has fever
+AND patient has cough
+THEN possible infection
+
+
+3. Role of a Knowledge Engineer
+
+1. Collect Knowledge
+
+The knowledge engineer collects information from:
+
+- Human experts
+- Books
+- Documents
+- Databases
+- Other reliable sources
+
+
+2. Analyze Knowledge
+
+They understand and organize the collected knowledge.
+
+Example:
+
+Symptoms → Disease
+Fever + Cough → Possible infection
+
+
+3. Represent Knowledge
+
+They convert knowledge into a form that the AI system can
+understand.
+
+For example:
+
+IF fever = high
+AND cough = yes
+THEN possible infection
+
+
+4. Build Knowledge Base
+
+They add the facts and rules to the Knowledge Base.
+
+Knowledge Base
+-------------------------
+Fact  → Fever = High
+Fact  → Cough = Yes
+Rule  → Fever + Cough
+        → Possible infection
+
+
+5. Test the System
+
+They check whether the Expert System gives correct results.
+
+
+6. Update Knowledge
+
+When new information becomes available, the knowledge engineer
+updates the Knowledge Base.
+
+
+Easy Flow
+
+Expert
+  ↓
+Knowledge Engineer
+  ↓
+Collect & Analyze Knowledge
+  ↓
+Represent Knowledge
+  ↓
+Knowledge Base
+  ↓
+Expert System
+  ↓
+Solution
+
+
+Easy Table
+
+Role          Meaning
+------------------------------------------------------------
+Collect       Gets knowledge from experts
+Analyze       Understands and organizes knowledge
+Represent     Converts knowledge into rules/facts
+Build         Creates Knowledge Base
+Test          Checks system results
+Update        Adds new knowledge
+
+
+Exam Definition — 2 Marks
+
+Knowledge Engineering is the process of acquiring, organizing,
+representing, and maintaining knowledge for use in an AI or
+Expert System. A Knowledge Engineer collects knowledge from
+experts and converts it into rules and facts that the system
+can use for reasoning.
+
+
+Remember:
+
+Knowledge Engineer = Expert's knowledge → AI Knowledge Base
+      
+      `
+    },
+    {
+      id: 74,
+      question: "74. Explain the steps involved in developing an Expert System. Explain the applications of Expert Systems in different fields. Write a short note on recent developments in Expert Systems.",
+      answer: "",
+      codeExample: `
+Expert System — Development, Applications and Recent Developments
+
+1. Steps involved in developing an Expert System
+
+Developing an Expert System involves collecting expert knowledge
+and converting it into a system that can solve problems.
+
+Steps:
+
+Identify Problem
+      ↓
+Knowledge Acquisition
+      ↓
+Knowledge Representation
+      ↓
+Build Knowledge Base
+      ↓
+Develop Inference Engine
+      ↓
+Test & Validate
+      ↓
+Deploy System
+      ↓
+Maintain & Update
+
+
+1. Identify the Problem
+
+First, decide what problem the Expert System will solve.
+
+Example: Medical disease diagnosis.
+
+
+2. Knowledge Acquisition
+
+Collect knowledge from human experts, books, documents,
+and databases.
+
+
+3. Knowledge Representation
+
+Convert the collected knowledge into facts, rules, frames, etc.
+
+Example:
+
+IF fever = high
+AND cough = yes
+THEN possible infection
+
+
+4. Build Knowledge Base
+
+Store all the facts and rules in the Knowledge Base.
+
+
+5. Develop Inference Engine
+
+Create the reasoning mechanism that uses the knowledge and
+rules to find a solution.
+
+
+6. Testing and Validation
+
+Check whether the system gives correct and reliable results.
+
+
+7. Deployment
+
+Make the Expert System available to users.
+
+
+8. Maintenance
+
+Update the system when new knowledge or rules become available.
+
+
+2. Applications of Expert Systems
+
+Expert Systems are used in many fields.
+
+Field                  Application
+----------------------------------------------------------------
+Medical                Disease diagnosis and treatment suggestions
+Finance                Loan approval and financial analysis
+Agriculture             Crop and plant disease diagnosis
+Education               Student guidance and learning systems
+Manufacturing           Machine fault detection
+Engineering             Equipment design and troubleshooting
+Law                     Legal advice and case analysis
+Cybersecurity           Detecting suspicious activities
+Customer Service        Automated problem solving
+Geology                 Finding minerals and natural resources
+
+
+Example
+
+In medicine:
+
+Symptoms
+   ↓
+Expert System
+   ↓
+Knowledge Base + Rules
+   ↓
+Possible Disease
+
+
+3. Recent Developments in Expert Systems
+
+Modern Expert Systems are becoming more powerful because they
+are being combined with AI, Machine Learning, Natural Language
+Processing, and modern data technologies.
+
+
+1. Integration with Machine Learning
+
+Modern systems can learn patterns from data instead of depending
+only on manually written rules.
+
+
+2. Natural Language Processing
+
+Users can interact with systems using normal human language
+instead of complex commands.
+
+
+3. Explainable AI
+
+Modern AI systems increasingly provide explanations about why
+a particular result was produced.
+
+
+4. Cloud-Based Expert Systems
+
+Expert Systems can be deployed on cloud platforms, making them
+easier to access and scale.
+
+
+5. Integration with Big Data
+
+Expert Systems can use large amounts of data to improve analysis
+and decision-making.
+
+
+6. AI + Expert Systems
+
+Modern systems often combine:
+
+Expert Knowledge
+       +
+Machine Learning
+       +
+Natural Language Processing
+       ↓
+Advanced Intelligent System
+
+
+7. Generative AI and LLMs
+
+Modern AI systems can combine large language models with
+knowledge bases and retrieval systems to provide more flexible,
+natural-language assistance while grounding answers in specific
+information.
+
+
+Easy Exam Summary
+
+Development Steps:
+
+Problem Identification → Knowledge Acquisition →
+Knowledge Representation → Knowledge Base →
+Inference Engine → Testing → Deployment → Maintenance
+
+
+Applications:
+
+Medical, Finance, Agriculture, Education, Manufacturing,
+Engineering, Law, Cybersecurity
+
+
+Recent Developments:
+
+Machine Learning + NLP + Explainable AI + Cloud +
+Big Data + Generative AI
+
+
+One-line conclusion:
+
+Expert Systems have evolved from rule-based systems into more
+intelligent systems that can combine expert knowledge with
+data-driven AI techniques.
+      `
+    },
+    {
+      id: 81,
+      question: "81. What is Prolog? Explain the basic components of a Prolog program. Explain Prolog syntax, predicates, functions and conditional statements with examples.",
+      answer: "",
+      codeExample: `
+Prolog
+
+1. What is Prolog?
+
+Prolog stands for PROgramming in LOGic.
+
+It is a logic programming language mainly used in Artificial
+Intelligence (AI) and knowledge-based systems.
+
+In Prolog, we give:
+
+- Facts → Information
+- Rules → Relationships or conditions
+- Queries → Questions
+
+
+Simple Example
+
+% Fact
+student(raj).
+
+% Rule
+smart(X) :- student(X).
+
+% Query
+?- smart(raj).
+
+Answer: true
+
+Here:
+
+student(raj) = Fact
+smart(X) :- student(X) = Rule
+?- smart(raj) = Query
+
+
+2. Basic Components of a Prolog Program
+
+A Prolog program mainly contains Facts, Rules, and Queries.
+
+
+1. Facts
+
+Facts represent information that is true.
+
+% Raj is a student
+student(raj).
+
+% Raj is 20 years old
+age(raj, 20).
+
+
+2. Rules
+
+Rules define a relationship or condition.
+
+% If someone is a student, then that person is eligible.
+eligible(X) :- student(X).
+
+Here :- means "if".
+
+
+3. Queries
+
+Queries are questions asked to Prolog.
+
+?- student(raj).
+
+Output:
+
+true
+
+Another query:
+
+?- age(raj, X).
+
+Output:
+
+X = 20
+
+
+Easy Memory
+
+Prolog = Facts + Rules + Queries
+
+
+3. Prolog Syntax
+
+Basic syntax rules:
+
+
+Facts
+
+predicate(value).
+
+Example:
+
+student(raj).
+
+Every statement ends with a period .
+
+
+Variables
+
+Variables start with a capital letter or underscore _.
+
+student(X).
+
+Here X is a variable.
+
+
+Constants
+
+Constants usually start with a small letter.
+
+raj
+john
+student
+
+
+Predicate
+
+A predicate describes a relationship or property.
+
+likes(raj, pizza).
+
+Here:
+
+likes = predicate
+raj and pizza = arguments
+
+
+4. Predicates in Prolog
+
+A predicate represents a relationship between objects or a
+property of an object.
+
+Example:
+
+likes(raj, pizza).
+likes(raj, mango).
+
+Here likes is a predicate with 2 arguments.
+
+We can ask:
+
+?- likes(raj, pizza).
+
+Output:
+
+true
+
+
+Another Example
+
+parent(rahul, raj).
+
+parent is the predicate.
+
+It means:
+
+Rahul is the parent of Raj.
+
+
+5. Functions in Prolog
+
+Prolog does not use functions in exactly the same way as
+languages like C, Java, or Python.
+
+Instead, predicates are used to perform operations or represent
+relationships.
+
+For arithmetic calculations, Prolog uses operators such as is.
+
+Example:
+
+sum(A, B, C) :-
+    C is A + B.
+
+Query:
+
+?- sum(10, 20, X).
+
+Output:
+
+X = 30
+
+
+Another Example
+
+square(X, Y) :-
+    Y is X * X.
+
+Query:
+
+?- square(5, X).
+
+Output:
+
+X = 25
+
+
+6. Conditional Statements in Prolog
+
+Prolog uses rules to represent conditions.
+
+The basic form is:
+
+condition :- result.
+
+It means:
+
+result is true if condition is true.
+
+
+Example
+
+student(raj).
+
+eligible(X) :-
+    student(X).
+
+If student(raj) is true, then:
+
+?- eligible(raj).
+
+Output:
+
+true
+
+
+If-Then-Else in Prolog
+
+Prolog also supports:
+
+Condition -> Then ; Else
+
+Example:
+
+check_age(Age, Result) :-
+    (Age >= 18 ->
+        Result = adult
+    ;
+        Result = minor
+    ).
+
+Query:
+
+?- check_age(20, X).
+
+Output:
+
+X = adult
+
+For:
+
+?- check_age(15, X).
+
+Output:
+
+X = minor
+
+
+Meaning
+
+Condition -> Then ; Else
+
+means:
+
+If condition is true → Then,
+otherwise → Else.
+
+
+Exam Summary
+
+Component       Meaning
+------------------------------------------------------------
+Fact            Represents true information
+Rule            Defines a condition/relationship
+Query           Question given to Prolog
+Predicate        Represents property or relationship
+Variable        Starts with capital letter
+Constant        Usually starts with lowercase letter
+:-              Means "if"
+.               Ends a Prolog statement
+?-              Starts a query
+->              Then
+;               Else
+
+
+One-line memory trick:
+
+Prolog program = Facts + Rules → Query → Answer
+      `
+    },
+    {
+      id: 82,
+      question: "82. Explain lists in Prolog and basic list manipulation functions with examples.",
+      answer: "",
+      codeExample: `
+Lists in Prolog
+
+A list in Prolog is a collection of elements written inside
+square brackets [ ].
+
+Lists can contain numbers, atoms, variables, or even other lists.
+
+Examples:
+
+[1, 2, 3, 4]
+
+[apple, mango, banana]
+
+[raj, john, X]
+
+An empty list is:
+
+[]
+
+
+1. Head and Tail
+
+Every non-empty list has two important parts:
+
+- Head → first element
+- Tail → remaining elements
+
+Example:
+
+[10, 20, 30, 40]
+
+Head = 10
+Tail = [20, 30, 40]
+
+We can represent it as:
+
+[Head | Tail]
+
+Example:
+
+[H | T] = [10, 20, 30, 40].
+
+Result:
+
+H = 10
+T = [20, 30, 40]
+
+
+2. Basic List Manipulation Functions
+
+
+A. Find the First Element
+
+We can get the first element using Head.
+
+first([H|_], H).
+
+Query:
+
+?- first([10,20,30], X).
+
+Output:
+
+X = 10
+
+Here _ means we don't care about the remaining elements.
+
+
+B. Find the Remaining Elements
+
+rest([_|T], T).
+
+Query:
+
+?- rest([10,20,30], X).
+
+Output:
+
+X = [20,30]
+
+
+C. Check Whether an Element Exists
+
+Prolog provides the member predicate.
+
+?- member(20, [10,20,30]).
+
+Output:
+
+true
+
+If the element does not exist:
+
+?- member(50, [10,20,30]).
+
+Output:
+
+false
+
+
+D. Find Length of a List
+
+Prolog provides length/2.
+
+?- length([10,20,30,40], X).
+
+Output:
+
+X = 4
+
+
+E. Append Two Lists
+
+The append/3 predicate joins two lists.
+
+?- append([1,2], [3,4], X).
+
+Output:
+
+X = [1,2,3,4]
+
+So:
+
+[1,2] + [3,4]
+       ↓
+[1,2,3,4]
+
+
+F. Reverse a List
+
+Prolog provides reverse/2.
+
+?- reverse([1,2,3,4], X).
+
+Output:
+
+X = [4,3,2,1]
+
+
+G. Check Empty List
+
+We can check whether a list is empty:
+
+?- [] = [].
+
+Output:
+
+true
+
+Or define:
+
+empty([]).
+
+Query:
+
+?- empty([]).
+
+Output:
+
+true
+
+
+3. User-Defined List Example
+
+We can write our own predicate to find the sum of list elements:
+
+sum_list([], 0).
+
+sum_list([H|T], Sum) :-
+    sum_list(T, Rest),
+    Sum is H + Rest.
+
+Query:
+
+?- sum_list([10,20,30], X).
+
+Working:
+
+10 + 20 + 30
+     ↓
+X = 60
+
+Output:
+
+X = 60
+
+
+Important List Functions
+
+Function      Purpose              Example
+--------------------------------------------------------------
+member/2      Check element        member(2,[1,2,3])
+length/2      Find length          length([1,2,3],X)
+append/3      Join lists           append([1],[2],X)
+reverse/2     Reverse list         reverse([1,2,3],X)
+[H|T]         Get head and tail     [H|T]=[1,2,3]
+
+
+Easy Memory Trick
+
+List = [Head | Tail]
+
+For example:
+
+[10, 20, 30, 40]
+ ↓
+Head = 10
+Tail = [20,30,40]
+
+So for exams, remember:
+
+Head, Tail, Member, Length, Append, Reverse
+      `
+    },
+    {
+      id: 83,
+      question: "83. Explain Prolog queries and the mechanism of backtracking with an example.",
+      answer: "",
+      codeExample: `
+Prolog Queries and Backtracking
+
+1. Prolog Query
+
+A query is a question given to a Prolog program to find whether
+something is true or false, or to find a value.
+
+A query starts with ?-.
+
+Example:
+
+student(raj).
+student(john).
+student(amit).
+
+Query:
+
+?- student(raj).
+
+Output:
+
+true
+
+Because student(raj) is a fact.
+
+Another query:
+
+?- student(ravi).
+
+Output:
+
+false
+
+Because Ravi is not in the facts.
+
+
+2. Query with a Variable
+
+We can use a variable to find information.
+
+student(raj).
+student(john).
+student(amit).
+
+Query:
+
+?- student(X).
+
+Prolog gives:
+
+X = raj
+X = john
+X = amit
+
+This is where backtracking happens.
+
+
+3. What is Backtracking?
+
+Backtracking is the process by which Prolog goes back and tries
+another possible solution when the current solution does not work
+or when the user asks for another answer.
+
+Simple Meaning:
+
+Try → Check → If failure, go back → Try another choice
+
+Prolog automatically performs backtracking.
+
+
+4. Example of Backtracking
+
+Consider:
+
+likes(raj, mango).
+likes(raj, apple).
+likes(raj, pizza).
+
+Query:
+
+?- likes(raj, X).
+
+
+Step 1
+
+Prolog checks the first fact:
+
+X = mango
+
+So first answer is:
+
+X = mango
+
+
+Step 2
+
+If we ask for another answer (;), Prolog backtracks.
+
+It goes back and checks the next possibility:
+
+X = apple
+
+
+Step 3
+
+Ask again:
+
+;
+
+Prolog backtracks again:
+
+X = pizza
+
+
+Step 4
+
+Ask again:
+
+;
+
+No more facts are available:
+
+false
+
+
+Backtracking Flow
+
+Query: likes(raj, X)
+          ↓
+     X = mango
+          ↓
+      Ask again
+          ↓
+     Backtrack
+          ↓
+     X = apple
+          ↓
+      Ask again
+          ↓
+     Backtrack
+          ↓
+     X = pizza
+          ↓
+      Ask again
+          ↓
+       false
+
+
+Easy Memory Trick
+
+Backtracking = Go Back + Try Another Choice
+
+
+Exam Definition
+
+Backtracking in Prolog is an automatic search mechanism in which
+Prolog goes back to a previous choice point and tries another
+possible solution when the current path fails or when another
+answer is requested.
+      `
+    },
+    {
+      id: 84,
+      question: "84. Explain arithmetic operations, numeric functions, input/output and local variables in Prolog.",
+      answer: "",
+      codeExample: `
+Arithmetic Operations, Numeric Functions, I/O and Local Variables in Prolog
+
+Prolog supports arithmetic calculations, numeric functions,
+input/output operations, and variables.
+
+
+1. Arithmetic Operations in Prolog
+
+Prolog provides operators for basic mathematical calculations.
+
+Operation          Operator    Example
+------------------------------------------------
+Addition           +           10 + 5
+Subtraction        -           10 - 5
+Multiplication     *           10 * 5
+Division            /           10 / 5
+Integer division   //          10 // 3
+Remainder          mod         10 mod 3
+
+
+Example:
+
+calculate :-
+    A is 10 + 5,       % A = 15
+    B is 10 - 5,       % B = 5
+    C is 10 * 5,       % C = 50
+    D is 10 / 5.       % D = 2.0
+
+
+Important: is
+
+The is operator is used to evaluate an arithmetic expression.
+
+X is 10 + 20.
+
+Result:
+
+X = 30
+
+Without is, Prolog treats 10 + 20 as a symbolic expression
+rather than calculating it.
+
+
+2. Numeric Functions
+
+Prolog provides several built-in numeric functions.
+
+Common Numeric Functions
+
+Function       Meaning          Example
+------------------------------------------------------------
+abs(X)         Absolute value   abs(-10) → 10
+sqrt(X)        Square root      sqrt(25) → 5.0
+max(X,Y)       Larger value     max(10,20) → 20
+min(X,Y)       Smaller value    min(10,20) → 10
+round(X)       Round number     round(4.6) → 5
+floor(X)       Lower integer    floor(4.8) → 4
+ceiling(X)     Higher integer   ceiling(4.2) → 5
+
+
+Example:
+
+calculate(X, Y) :-
+    A is abs(X),
+    B is sqrt(Y).
+
+Query:
+
+?- calculate(-10, 25).
+
+Values:
+
+A = 10
+B = 5.0
+
+
+3. Input and Output in Prolog
+
+Prolog provides predicates for taking input and displaying
+output.
+
+
+Output
+
+write/1
+
+Used to display information.
+
+show :-
+    write('Hello Raj').
+
+Output:
+
+Hello Raj
+
+
+writeln/1
+
+Displays information and moves to a new line.
+
+show :-
+    writeln('Hello'),
+    writeln('Welcome to Prolog').
+
+Output:
+
+Hello
+Welcome to Prolog
+
+
+Input
+
+read/1
+
+Used to take input from the user.
+
+get_name :-
+    write('Enter your name: '),
+    read(Name),
+    write('Your name is: '),
+    write(Name).
+
+Example input:
+
+raj.
+
+Output:
+
+Enter your name: raj.
+Your name is: raj
+
+
+Note:
+
+In Prolog, input entered with read/1 is normally terminated
+with a period .
+      `
     },
     {
       id: 1,
